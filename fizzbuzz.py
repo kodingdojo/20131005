@@ -4,10 +4,10 @@ from nose.tools import eq_
 def fizzbuzz(number):
     if number == 1:
         return "1"
-    elif number == 5:
-        return "buzz"
     elif number == 15:
         return "fizzbuzz"
+    elif number % 5 == 0:
+        return "buzz"
     else:
         return "fizz"
 
