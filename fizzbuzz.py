@@ -15,7 +15,12 @@ def fizzbuzz(number):
 
 eq_("fizz", fizzbuzz(3))
 eq_("fizz", fizzbuzz(6))
-eq_("1", fizzbuzz(1))
+
 eq_("buzz", fizzbuzz(5))
+eq_("buzz", fizzbuzz(10))
+
 eq_("fizzbuzz", fizzbuzz(15))
+eq_("fizzbuzz", fizzbuzz(45))
+
 eq_("2", fizzbuzz(2))
+eq_("1", fizzbuzz(1))
