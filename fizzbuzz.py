@@ -2,16 +2,23 @@ from nose.tools import eq_
 
 
 def fizzbuzz(number):
-    if number == 1:
-        return "1"
-    if number == 2:
-        return "2"
-    elif number % 15 == 0:
+    if number == 0:
+        return "invalid number!"
+
+    if number % 15 == 0:
         return "fizzbuzz"
+
+    if number % 3 == 0:
+        return "fizz"
+
     elif number % 5 == 0:
         return "buzz"
+
     else:
-        return "fizz"
+        return str(number)
+
+
+eq_("invalid number!", fizzbuzz(0))
 
 eq_("fizz", fizzbuzz(3))
 eq_("fizz", fizzbuzz(6))
